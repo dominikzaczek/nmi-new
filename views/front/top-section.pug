@@ -1,0 +1,13 @@
+.row
+    .col-sm-4.col-md-8
+        body
+            video(id='my-video' class='video-js vjs-fluid' preload='auto' poster='/images/video-poster.jpg' data-setup='{}' autoplay muted)
+                source(src='/images/video_background.mp4' type='video/mp4')
+                p.vjs-no-js To view this video please enable JavaScript, and consider upgrading to a web browser that
+            script(src='https://vjs.zencdn.net/7.8.4/video.js')
+    .col-sm-4.col-md-4.d-flex-align-items-end.intro
+        .d-flex.flex-column
+            .p-2: img(src='/images/ttl.jpg' class='img')
+            .p-2: h2 Learn music from people with passion
+            .p-2: button.btn.btn-call-to-action START LEARNING
+            

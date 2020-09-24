@@ -1,0 +1,26 @@
+extends base
+
+block content
+    .container
+        .row
+            .col-lg-3.col-md-2
+            .col-lg-6.col-md-8.login-box
+                .col-lg-12.login-key
+                    i.fa.fa-key(aria-hidden="true")
+                .col-lg-12.login-title
+                    | Log in to student dashboard
+                .col-lg-12.login-form
+                    .col-lg-12.login-form
+                        form.form
+                            .form-group
+                                label.form-control-label EMAIL
+                                    input#email.form-control(type='text')
+                            .form-group
+                                label.form-control-label PASSWORD
+                                input#password.form-control(type='password')
+                            
+                            .col-lg-12.loginbbtm
+                                .col-lg-6.login-btm.login-text
+                                .col-lg-6.login-btm.login-button
+                                    button.btn.btn-light(type='submit') LOGIN
+

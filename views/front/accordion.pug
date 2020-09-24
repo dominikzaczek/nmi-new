@@ -1,0 +1,43 @@
+.container
+    #fp-accordion.accordion
+        .card
+            #headingOne.card-header.dark-bg
+                h2.mb-0
+                    button.btn.btn-block.text-left(type='button' data-toggle='collapse' data-target='#collapseOne' aria-expanded='true' aria-controls='collapseOne' style='color: white')
+                        | What is New Music Institute?
+            #collapseOne.collapse(aria-labelledby='headingOne' data-parent='#fp-accordion')
+                .card-body.dark-bg
+                    | It's a pretentious name for a music tuition school that aims to conduct research on how to improve teaching and music technique. It also provides private tuition and online VOD service for people wanting to learn. 
+        .card
+            #headingTwo.card-header.dark-bg
+                h2.mb-0
+                    button.btn.btn-block.text-left.collapsed(type='button' data-toggle='collapse' data-target='#collapseTwo' aria-expanded='false' aria-controls='collapseTwo' style='color: white')
+                        | I'd like to become a student
+            #collapseTwo.collapse(aria-labelledby='headingTwo' data-parent='#fp-accordion')
+                .card-body.dark-bg
+                    | I carefully choose who I teach as I believe that it should be a pleasant experience for either student and teacher. 
+                    | I am happy to discuss our ideas and schedules. Click here to fill the contact form and I will contact you in 48 hours. 
+        .card
+            #headingThree.card-header.dark-bg
+                h2.mb-0
+                    button.btn.btn-block.text-left.collapsed(type='button' data-toggle='collapse' data-target='#collapseThree' aria-expanded='false' aria-controls='collapseThree' style='color: white')
+                        | I'd like to access the website without booking any lessons
+            #collapseThree.collapse(aria-labelledby='headingThree' data-parent='#fp-accordion')
+                .card-body.dark-bg
+                    | At the moment, contents of the website are available only for my private tuition students. I am considering opening the website to public after a period of testing.
+        .card
+            #headingFour.card-header.dark-bg
+                h2.mb-0
+                    button.btn.btn-block.text-left.collapsed(type='button' data-toggle='collapse' data-target='#collapseFour' aria-expanded='false' aria-controls='collapseFour' style='color: white')
+                        | At the moment, I am having lessons with another teacher or agency. Do you offer any discounts?
+            #collapseFour.collapse(aria-labelledby='headingFour' data-parent='#fp-accordion')
+                .card-body.dark-bg
+                    | Actually, I do. Every person using services of other agency or teacher, will receive a discount worth a single lesson with another agency or teacher on the first monthly package. 
+        .card
+            #headingFive.card-header.dark-bg
+                h2.mb-0
+                    button.btn.btn-block.text-left.collapsed(type='button' data-toggle='collapse' data-target='#collapseFive' aria-expanded='false' aria-controls='collapseFive' style='color: white')
+                        | Can I acquire any certification when learning with you?
+            #collapseFive.collapse(aria-labelledby='headingFive' data-parent='#fp-accordion')
+                .card-body.dark-bg
+                    | We can work towards exams provided by different exam boards including ABRSM, Trinity and RCM. 

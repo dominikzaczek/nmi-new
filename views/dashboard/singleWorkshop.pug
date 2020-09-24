@@ -1,0 +1,43 @@
+extends ../base
+
+block content
+    .container-fluid
+        .row
+            .col-md-12
+                video(id='my-video' class='video-js vjs-fluid vjs-theme-city' preload='auto' poster='/images/video-poster.jpg' data-setup='{}' controls muted)
+                    source(src=`/videos/workshops/${workshop.embedUrl}` type='video/mp4')
+                    p.vjs-no-js To view this video please enable JavaScript, and consider upgrading to a web browser that
+        .row.header-main
+            .col-md-8
+                .d-flex.justify-content-start
+                    p.video-stats
+                        svg.bi.bi-play-fill(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
+                            path(d='M11.596 8.697l-6.363 3.692c-.54.313-1.233-.066-1.233-.697V4.308c0-.63.692-1.01 1.233-.696l6.363 3.692a.802.802 0 0 1 0 1.393z')
+                        |  487 plays
+                    p.video-stats
+                        svg.bi.bi-question-square-fill(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
+                            path(d='M2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2zm3.496 6.033a.237.237 0 0 1-.24-.247C5.35 4.091 6.737 3.5 8.005 3.5c1.396 0 2.672.73 2.672 2.24 0 1.08-.635 1.594-1.244 2.057-.737.559-1.01.768-1.01 1.486v.105a.25.25 0 0 1-.25.25h-.81a.25.25 0 0 1-.25-.246l-.004-.217c-.038-.927.495-1.498 1.168-1.987.59-.444.965-.736.965-1.371 0-.825-.628-1.168-1.314-1.168-.803 0-1.253.478-1.342 1.134-.018.137-.128.25-.266.25h-.825zm2.325 6.443c-.584 0-1.009-.394-1.009-.927 0-.552.425-.94 1.01-.94.609 0 1.028.388 1.028.94 0 .533-.42.927-1.029.927z')
+                        | 0 questions answered
+                    p.video-stats
+                        svg.bi.bi-person-square(width='1em' height='1em' viewBox='0 0 16 16' fill='currentColor' xmlns='http://www.w3.org/2000/svg')
+                            path(fill-rule='evenodd' d='M14 1H2a1 1 0 0 0-1 1v12a1 1 0 0 0 1 1h12a1 1 0 0 0 1-1V2a1 1 0 0 0-1-1zM2 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2H2z')
+                            path(fill-rule='evenodd' d='M2 15v-1c0-1 1-4 6-4s6 3 6 4v1H2zm6-6a3 3 0 1 0 0-6 3 3 0 0 0 0 6z')
+                        | More about Dominik
+                h2 #{workshop.title}
+                p #{workshop.description}
+            .col-md-4.dark-bg.padding-5
+                h2 Discuss it during your next lesson!
+        .row
+            .col-md-12
+                h3 More workshops
+                each otherWorkshop in workshops
+                    a(href=`/workshop/${otherWorkshop.slug}`)
+                        img.workshop-cover-list(src=`/images/workshop_covers/${otherWorkshop.image}` alt=`${otherWorkshop.title}`)
+        .row
+            .col-md-6
+                h3 Questions and Answers
+                p Nobody has asked any question yet
+
+
+
+

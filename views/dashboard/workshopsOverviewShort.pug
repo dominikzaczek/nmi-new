@@ -1,0 +1,44 @@
+.container
+    h1.header-main Watch Workshops
+    .row.d-flex
+        .col-md-12
+            each workshop in workshops
+                a(href=`/workshop/${workshop.slug}`)
+                    img.workshop-cover-list(src=`images/workshop_covers/${workshop.image}`)
+
+//- <div class="container">
+//-   <h1 class="header-main">Watch workshops</h1>
+//-   <div class="row d-flex">
+//-     <div class="col-md-12">
+//-       <img
+//-         src="/images/placeholder-workshop.webp"
+//-         class="workshop-cover-list"
+//-       />
+//-       <img
+//-         src="/images/placeholder-workshop.webp"
+//-         class="workshop-cover-list"
+//-       />
+//-       <img
+//-         src="/images/placeholder-workshop.webp"
+//-         class="workshop-cover-list"
+//-       />
+//-       <img
+//-         src="/images/placeholder-workshop.webp"
+//-         class="workshop-cover-list"
+//-       />
+//-       <img
+//-         src="/images/placeholder-workshop.webp"
+//-         class="workshop-cover-list"
+//-       /><img
+//-         src="/images/placeholder-workshop.webp"
+//-         class="workshop-cover-list"
+//-       /><img
+//-         src="/images/placeholder-workshop.webp"
+//-         class="workshop-cover-list"
+//-       /><img
+//-         src="/images/placeholder-workshop.webp"
+//-         class="workshop-cover-list"
+//-       />
+//-     </div>
+//-   </div>
+//- </div>

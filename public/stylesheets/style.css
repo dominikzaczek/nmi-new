@@ -1,0 +1,367 @@
+@font-face {
+  font-family: "Cabin";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local("Cabin"), local("Cabin-Regular"),
+    url(/fonts/cabin.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA,
+    U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215,
+    U+FEFF, U+FFFD;
+}
+* {
+  box-sizing: border-box;
+}
+html,
+body {
+  padding: 0;
+}
+
+body {
+  font-family: "Cabin", sans-serif;
+  background-color: #000;
+  padding: 0;
+  color: #fff;
+}
+
+a {
+  color: #00b7ff;
+}
+
+.navbar {
+  background-color: #000;
+}
+
+/* Headers */
+
+h1 {
+  color: #fff;
+}
+
+h2 {
+  color: lightgray;
+}
+
+h5 {
+  font-family: Cabin;
+  font-size: 4rem;
+  text-shadow: 2px 2px black;
+}
+
+.title {
+  font-size: 3em;
+}
+
+.intro {
+  padding-bottom: 30px;
+}
+.cities {
+  /*background-image: url(../images/bg-2.jpg); */
+  background-position: center;
+  background-size: cover;
+  min-height: 10vh;
+  background: #00273d;
+  color: #3e667d;
+  font-size: 2.5rem;
+}
+
+.city:hover {
+  color: #fff;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.fp-modal {
+  background: #000;
+  box-shadow: 20px 20px 60px #000000, -20px -20px 60px #000000;
+}
+.front {
+  min-width: 30%;
+}
+
+.btn-call-to-action {
+  background: #00273d;
+  color: white;
+  font-size: 1em;
+  padding: 20px;
+}
+
+.btn-call-to-action:hover {
+  color: #fff;
+  box-shadow: 10px 10px #fff;
+}
+
+.money {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 1)
+    ),
+    url(../images/bg-2.jpg);
+}
+
+.overlay-black {
+  background: rgba(0, 0, 0, 0.8);
+}
+
+.front-section {
+  height: 80vh;
+}
+
+.modal-title {
+  font-size: 1.5rem;
+}
+
+/* Carousel CSS */
+
+.offer-section {
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.5),
+      rgba(0, 0, 0, 1)
+    ),
+    url(../images/piano-bg-section.jpg);
+  background-size: cover;
+  background-position: right;
+  background-repeat: no-repeat;
+}
+
+.subject {
+  min-height: 300px;
+  background-size: cover;
+}
+
+.carousel {
+  width: 60vw;
+}
+
+@media (min-width: 576px) {
+  .carousel {
+    width: 100vw;
+  }
+}
+
+.footer {
+  height: 20vh;
+}
+
+.classes {
+  padding: 10%;
+  margin-top: 20px;
+  margin-bottom: 40%;
+  background-color: #00273d;
+  color: white;
+  border: 0;
+}
+
+.shadowy {
+  box-shadow: 10px 10px #fff;
+}
+
+.aqua {
+  background-color: #00273d;
+}
+
+.padding {
+  padding: 10%;
+}
+
+.padding-5 {
+  padding: 5%;
+}
+
+.why-me {
+  padding: 5%;
+  margin-bottom: 2rem;
+}
+.why-me img {
+  width: 300px;
+}
+.why-me-text {
+  font-size: 2rem;
+}
+
+.justified {
+  text-align: justify;
+}
+
+.workshop-description {
+  margin-top: 10px;
+}
+
+.dark-bg {
+  background-color: #00273d;
+}
+
+.learning {
+  padding: 2%;
+}
+
+.workshop-cover-list {
+  max-width: 200px;
+  margin: 20px;
+}
+
+.header-main {
+  margin-top: 20px;
+}
+
+.btn-workshop {
+  margin: 10px;
+}
+
+.dark-with-shadow {
+  color: #00273d;
+  text-shadow: 1px 1px white;
+}
+
+a:hover {
+  text-decoration-color: #00273d;
+}
+
+.video-stats {
+  margin-right: 20px;
+}
+
+.bi {
+  margin-right: 5px;
+}
+
+/* LOGIN FORM */
+
+.login-box {
+  margin-top: 75px;
+  height: auto;
+  background: #00273d;
+  text-align: center;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+.login-title {
+  margin-top: 15px;
+  text-align: center;
+  font-size: 30px;
+  letter-spacing: 2px;
+  margin-top: 15px;
+  font-weight: bold;
+  color: #ecf0f5;
+}
+
+.login-form {
+  margin-top: 25px;
+  text-align: left;
+}
+
+input[type="text"] {
+  background-color: #00273d;
+  border: none;
+  border-bottom: 2px solid #3e667d;
+  border-top: 0px;
+  border-radius: 0px;
+  font-weight: bold;
+  outline: 0;
+  margin-bottom: 20px;
+  padding-left: 0px;
+  color: #ecf0f5;
+}
+
+input[type="password"] {
+  background-color: #00273d;
+  border: none;
+  border-bottom: 2px solid #3e667d;
+  border-top: 0px;
+  border-radius: 0px;
+  font-weight: bold;
+  outline: 0;
+  padding-left: 0px;
+  margin-bottom: 20px;
+  color: #ecf0f5;
+}
+
+.form-group {
+  margin-bottom: 40px;
+  outline: 0px;
+}
+
+.form-control:focus {
+  border-color: inherit;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-bottom: 2px solid #3e667d;
+  outline: 0;
+  background-color: #1a2226;
+  color: #ecf0f5;
+}
+
+input:focus {
+  outline: none;
+  box-shadow: 0 0 0;
+}
+
+label {
+  margin-bottom: 0px;
+}
+
+.form-control-label {
+  font-size: 10px;
+  color: #6c6c6c;
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+
+.btn-outline-primary {
+  border-color: #3e667d;
+  color: #3e667d;
+  border-radius: 0px;
+  font-weight: bold;
+  letter-spacing: 1px;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+}
+
+.btn-outline-primary:hover {
+  background-color: #0db8de;
+  right: 0px;
+}
+
+.login-btm {
+  float: left;
+}
+
+.login-button {
+  padding-right: 0px;
+  text-align: right;
+  margin-bottom: 25px;
+}
+
+.login-text {
+  text-align: left;
+  padding-left: 0px;
+  color: #a2a4a4;
+}
+
+.loginbttm {
+  padding: 0px;
+}
+
+/* Accordionzzz */
+
+.accordion {
+  border: 0;
+}
+
+.accordion btn {
+  color: white;
+}
+
+.card {
+  border: 0;
+  margin-bottom: 5px;
+  color: white;
+}
+.card btn {
+  color: white;
+}
+
+#fp-accordion btn {
+  color: white;
+}
