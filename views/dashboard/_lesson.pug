@@ -1,0 +1,8 @@
+.card
+  .card-body
+    h3 #{lesson.dateOfLesson.getDate()}/#{lesson.dateOfLesson.getMonth()+1}/#{lesson.dateOfLesson.getFullYear()}, #{lesson.dateOfLesson.getHours()}:#{lesson.dateOfLesson.getMinutes()}0
+    h6.card-subtitle.mb-2.text-muted A #{lesson.type} lesson
+    .card-text
+        - const feroce = "**I'm so tired**"
+        p!= marked(lesson.report)
+

@@ -1,0 +1,29 @@
+extends ../base
+
+block content
+    .container.d-flex.justify-content-center
+        form.lessonForm.login-form
+            .text-center.mb-4
+                h1.h3.mb-3.font-weight-normal Add a lesson and the report
+            .form-label-group
+                input#date.form-control(type='datetime-local' required='')
+                label(for='inputPassword') Date and Time
+            .form-label-group
+                input#teacherId.form-control(type='text' placeholder='Teacher DB id' required='' autofocus='')
+                label(for='inputEmail') Teacher ID
+            .form-label-group
+                input#studentId.form-control(type='text' placeholder='Student DB id' required='')
+                label(for='inputPassword') StudentID
+            .form-label-group
+                select#typeOfLesson.form-control
+                    option piano
+                    option singing
+                    option theory
+                label(for='inputPassword') Type of Lesson
+            .form-label-group
+                textarea#report.form-control
+                label(for='inputPassword') Student Report
+            .form-check
+                input#given.form-check-input(type='checkbox')
+                label(for='inputPassword') Given?
+            button.btn.btn-lg.btn-call-to-action.btn-block(type='submit') Add the lesson

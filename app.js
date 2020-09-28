@@ -2,6 +2,7 @@ const express = require("express");
 const app = express();
 const AppError = require("./utils/appError");
 const globalErrorHandler = require("./controllers/errorController");
+const marked = require("marked");
 
 //Routes
 const workshopRoutes = require("./routes/workshopRoutes.js");
@@ -15,16 +16,17 @@ const helmet = require("helmet");
 const mongoSanitize = require("express-mongo-sanitize");
 const xss = require("xss-clean");
 const cookieParser = require("cookie-parser");
-
+// app.use(helmet());
 app.set("view engine", "pug");
 app.set("views", "./views");
+// app.use(helmet());
 // GLOBAL MIDDLEWARE
 // app.use(
 //   helmet.contentSecurityPolicy({
 //     directives: {
-//       "default-src": ["'self'"],
-//       "script-src": ["'self'", "'*.cloudflare.com'"],
-//       "object-src": ["'none'"],
+//       defaultSrc: ["'self'"],
+//       scriptSrc: ["'self'"],
+//       objectSrc: ["'none'"],
 //     },
 //   })
 // );

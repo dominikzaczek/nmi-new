@@ -3,7 +3,10 @@ nav.navbar
         img.d-inline-block.align-top(src='/images/logo-wider.png' width='200px' alt='logo' loading='lazy')
     span.navbar-text
         if user 
-            p #{user.name} #{user.surname}
+            if dashboard
+                p #{user.name} #{user.surname}
+            else 
+                a(href="/dashboard") #{user.name}, go to your dashboard
         else
             a.btn.btn-light(href='/login') Log in
 

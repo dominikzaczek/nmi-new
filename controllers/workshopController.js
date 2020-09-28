@@ -3,7 +3,6 @@ const catchAsync = require("./../utils/catchAsync");
 
 exports.getAllWorkshops = catchAsync(async (req, res) => {
   const workshops = await Workshop.find();
-  console.log(workshops);
   res.status(200).json({
     status: "success",
     data: {

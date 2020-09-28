@@ -22,13 +22,15 @@ const lessonSchema = new mongoose.Schema(
       required: true,
       default: Date.now(),
     },
+    given: {
+      type: Boolean,
+    },
     type: {
       type: String,
       enum: ["piano", "singing", "theory"],
     },
     report: {
       type: String,
-      default: "Report not added yet",
     },
   },
   {
@@ -38,3 +40,5 @@ const lessonSchema = new mongoose.Schema(
 );
 
 const Lesson = mongoose.model("Lesson", lessonSchema);
+
+module.exports = Lesson;

@@ -14,6 +14,12 @@ router.get("/", (req, res, next) => {
 });
 
 router.get("/login", viewController.getLoginScreen);
+router.get(
+  "/admin/lesson/add",
+  authController.protect,
+  authController.restrictTo("admin"),
+  viewController.adminAddALesson
+);
 router.get("/dashboard", authController.protect, viewController.getDashboard);
 router.get(
   "/workshop/:slug",

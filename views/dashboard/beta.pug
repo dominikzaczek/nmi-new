@@ -8,3 +8,15 @@
             hr.my-4
             p
                 | If you have any questions, you know how to contact me. 
+
+    .row
+        .col-md-6
+            h2 Your lesson reports
+            each lesson in lessons
+                include _lesson 
+        .col-md-6
+            h2 Watch an old workshop
+            iframe(width='560' height='315' src='https://www.youtube.com/embed/AwEFxioniRE' frameborder='0' allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture' allowfullscreen='')
+
+            
+                          
