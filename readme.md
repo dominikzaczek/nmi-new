@@ -1,3 +1,3 @@
 # New Music Institute
 
-Made for my students
+Made for students
